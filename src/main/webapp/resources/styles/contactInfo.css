@@ -11,7 +11,21 @@
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+}
+
+#successMessage {
+	width: 65%;
+	text-align:center;
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 30px;
 	font-family: Prociono;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 1.5em;
+	background-color: #5BB75B;
+	color:#F6E7D2;
 }
 
 table {
@@ -56,4 +70,45 @@ tbody {
 	border: 1px solid rgba(0,0,0,0.4);
 	width: 75%;
 	margin:0 auto;
+}
+
+#MessageForm {
+	margin: 0 auto;
+	width: 41%;
+	padding: 30px;
+	border:  1px dashed rgba(0,0,0,0.5);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#ContactHeading {
+	font-size: 2em;
+	text-align:center;
+	padding-top: 40px;
+}
+
+.ErrorMessage {
+	color:#dc143c;
+}
+
+#MessageButton {
+	background-color: #0A4958;
+	color:#F6E7D2;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 50%;
+	height: 50px;
+	cursor: pointer;
+	border:none;
+	font-size: 1em;
+}
+
+#MessageButton:hover {
+	background-color:#01B6AD;
+}
+
+#chars {
+	text-align: right;
 }

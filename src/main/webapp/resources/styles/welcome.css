@@ -68,6 +68,7 @@ li {
 html, body {
 	height: 100%;
 	background-color: #F6E7D2;
+	font-family: Prociono;
 }
 .wrapper {
 	min-height: 100%;
