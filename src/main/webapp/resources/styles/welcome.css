@@ -1,0 +1,98 @@
+@font-face { 
+	font-family: Prociono; 
+	src: url('Prociono-Regular.otf'); 
+}
+
+#myName {
+	text-decoration: none;
+	color: #F6E7D2;
+}
+
+#header {
+	background-color:#01B6AD;
+	padding: 20px;
+}
+
+#login {
+	text-align:right;
+	
+}
+
+#submit {
+	background-color: #0A4958;
+	color: #F6E7D2;
+}
+
+h1 {
+	font-family: Prociono;
+	color: #F6E7D2;
+}
+
+#navbar {
+	list-style-type:none;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+	display: table;
+}
+
+li {
+	background-color: #0A4958;
+	color:#F6E7D2;
+	display:table-cell;
+	font-family: Prociono;
+	padding: 0px;
+	width: 50%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 30px 30px 0;
+}
+
+.navlink {
+	text-decoration:none;
+	color:#F6E7D2;
+	display: block;
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.navlink:hover {
+	background-color:#F6E7D2;
+	color: #0A4958
+}
+
+
+html, body {
+	height: 100%;
+	background-color: #F6E7D2;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
+}
+
+#content {
+	width:65%;
+	margin: 0 auto;	
+}
+
+.push {
+	height: 2em;
+}
+
+.footer{
+	height: 2em;
+	background-color:#01B6AD;
+}
+
+#Cdt {
+	text-align:center;
+	padding:4px;
+	font-family: Prociono;
+}
+
