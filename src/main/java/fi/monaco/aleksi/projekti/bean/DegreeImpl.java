@@ -5,6 +5,11 @@ public class DegreeImpl implements Degree {
 	int id, compYear;
 	String name, school, description;
 	
+	
+	
+	public DegreeImpl() {
+	}
+
 	public DegreeImpl(int id, int compYear, String name, String school,
 			String description) {
 		super();

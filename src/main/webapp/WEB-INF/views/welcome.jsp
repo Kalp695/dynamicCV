@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Aleksi Monaco's CV</title>
-<link rel="stylesheet" type="text/css" href="resources/styles/welcome.css">
+<link rel="stylesheet" type="text/css" href="resources/styles/common.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>

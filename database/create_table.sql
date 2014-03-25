@@ -11,7 +11,7 @@ CREATE TABLE person (
 
 CREATE TABLE degree (
 	degree_id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
-	name VARCHAR(30) NOT NULL,
+	name VARCHAR(50) NOT NULL,
 	compYear INTEGER,
 	school VARCHAR(50) NOT NULL,
 	description TEXT,

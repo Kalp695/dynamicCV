@@ -1,0 +1,36 @@
+.CVTable {
+	width: 100%;
+}
+
+.CVTableHead {
+	text-align: left;
+	font-size: 1.75em;
+}
+
+.CVTableHeadTd {
+	padding-bottom: 20px;
+}
+
+#CVTableBody {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.CVTdHead {
+	padding: 10px;
+	font-size: 1.25em;
+}
+
+.CVTd {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+#DegreeDesc {
+	font-style: italic;
+}
+
+@media (max-width:40em) {
+    table, thead, tbody, tfoot, th, td, tr { display:block; }
+    tr + tr { margin-top:1em; }
+}

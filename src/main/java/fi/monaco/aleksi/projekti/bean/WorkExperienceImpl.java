@@ -5,7 +5,9 @@ public class WorkExperienceImpl implements WorkExperience{
 	int id;
 	String employer, title, taskDescription, startDate, endDate;
 	
-	
+	public WorkExperienceImpl() {
+	}
+
 	public WorkExperienceImpl(int id, String employer, String title,
 			String taskDescription, String startDate, String endDate) {
 		super();

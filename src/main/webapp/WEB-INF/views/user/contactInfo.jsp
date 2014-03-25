@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
 <title>Contact Info</title>
 
-<link rel="stylesheet" type="text/css" href="resources/styles/welcome.css">
+<link rel="stylesheet" type="text/css" href="resources/styles/common.css">
 <link rel="stylesheet" type="text/css" href="resources/styles/contactInfo.css">
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -39,6 +39,11 @@
 		    
 		    var elem = $("#chars");
 			$("#text").limiter(500, elem);
+			
+			$("#successMessage").click(function() {
+				$("#successMessage").fadeOut();	
+			});
+			
 		})(jQuery);
 </script>
 </head>
@@ -80,7 +85,7 @@
 
 	<tbody>
 		<tr>
-			<td> <c:out value="${person.FName}" /> <c:out value="${person.LName}" /></td>
+			<td><c:out value="${person.FName}" /> <c:out value="${person.LName}" /></td>
 		</tr>
 		<tr>
 			<td><c:out value="${person.address }" /></td>
@@ -92,7 +97,7 @@
 			<td> <c:out value="${person.phone}" /></td>
 		</tr>
 		<tr>
-			<td><a href="mailto:<c:out value="${person.email}" />"> <c:out value="${person.email}" /></a></td>
+			<td><a href="mailto:${person.email}"> <c:out value="${person.email}" /></a></td>
 		</tr>
 	</tbody>
 	

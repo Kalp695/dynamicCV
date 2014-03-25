@@ -1,5 +1,7 @@
 package fi.monaco.aleksi.projekti.controller;
 
+import java.util.List;
+
 import javax.inject.Inject;
 import javax.validation.Valid;
 
@@ -11,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import fi.monaco.aleksi.projekti.bean.Degree;
 import fi.monaco.aleksi.projekti.bean.Message;
 import fi.monaco.aleksi.projekti.bean.MessageImpl;
 import fi.monaco.aleksi.projekti.bean.Person;
+import fi.monaco.aleksi.projekti.bean.WorkExperience;
 import fi.monaco.aleksi.projekti.dao.PersonDAO;
 
 @Controller
@@ -34,6 +38,26 @@ public class PersonController {
 	@RequestMapping(value="/welcome")
 	public String getWelcomePage(){
 		return "welcome";
+	}
+	
+	//GET CV
+	@RequestMapping(value="/curriculum", method=RequestMethod.GET)
+	public String getCV(Model model){
+		
+		//GET PERSONAL INFORMATION
+		Person newPerson = dao.getContInfo(1);
+		model.addAttribute("person", newPerson);
+		
+		//GET ALL DEGREES
+		List<Degree> degrees = dao.getAllDegrees(1);
+		model.addAttribute("degrees", degrees);
+		
+		//GET ALL WORK EXPERIENCES
+		List<WorkExperience> workExps = dao.getAllWorkExperiences(1);
+		model.addAttribute("workExps", workExps);
+		
+		return "user/curriculum";
+		
 	}
 	
 	//RETRIEVE CONTACT INFORMATION AND GENERATE MESSAGE FORM

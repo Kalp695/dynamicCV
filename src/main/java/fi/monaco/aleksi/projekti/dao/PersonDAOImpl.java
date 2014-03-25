@@ -1,10 +1,10 @@
 package fi.monaco.aleksi.projekti.dao;
 
-import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -13,8 +13,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import fi.monaco.aleksi.projekti.bean.Degree;
 import fi.monaco.aleksi.projekti.bean.Message;
 import fi.monaco.aleksi.projekti.bean.Person;
+import fi.monaco.aleksi.projekti.bean.WorkExperience;
 
 @Repository
 public class PersonDAOImpl implements PersonDAO {
@@ -64,6 +66,26 @@ public class PersonDAOImpl implements PersonDAO {
 				 message.getName() ,id);
 		
 		
+	}
+
+	public List<Degree> getAllDegrees(int id) {
+		final String sql = "SELECT degree_id, name, compYear, school, description FROM degree WHERE person_id=?";
+		Object[] parameters = new Object[] { id };
+		RowMapper<Degree> rowMap = new DegreeRowMapper();
+		
+		List<Degree> degrees = jdbcTemplate.query(sql, parameters, rowMap);
+		
+		return degrees;
+	}
+
+	public List<WorkExperience> getAllWorkExperiences(int id) {
+		final String sql = "SELECT work_id, employer, title, taskDescription, startDate, endDate FROM workExperience WHERE person_id=?";
+		Object[] parameters = new Object[] { id };
+		RowMapper<WorkExperience> rowMap = new WorkExperienceRowMapper();
+		
+		List<WorkExperience> workExps = jdbcTemplate.query(sql, parameters, rowMap);
+		
+		return workExps;
 	}
 
 }
