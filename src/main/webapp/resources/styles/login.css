@@ -1,0 +1,51 @@
+@media (max-width:40em) {
+    table, thead, tbody, tfoot, th, td, tr { display:block; }
+    tr + tr { margin-top:1em; }
+}
+
+
+h2 {
+	text-align: center;
+}
+
+#failureMessage {
+	width: 65%;
+	text-align:center;
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 1em;
+	background-color: #e62056;
+	color:#F6E7D2;
+}
+
+#LoginForm {
+	text-align:center;
+	width: 33%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.LoginInput {
+	padding:5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align:center;
+	width:90%;
+}
+
+#LoginSubmit {
+	font-size: 1em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	border:none;
+	background-color: #0A4958;
+	color:#F6E7D2; 
+	width: 100%;
+	margin-top: 30px;
+}

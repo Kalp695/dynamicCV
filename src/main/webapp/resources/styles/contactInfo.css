@@ -1,7 +1,4 @@
-@font-face { 
-	font-family: Prociono; 
-	src: url('Prociono-Regular.otf'); 
-}
+
 
 #successMessage {
 	width: 65%;
@@ -9,7 +6,6 @@
 	margin: 0 auto;
 	padding: 20px;
 	margin-top: 30px;
-	font-family: Prociono;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;

@@ -1,6 +1,28 @@
-@font-face { 
-	font-family: Prociono; 
-	src: url('Prociono-Regular.otf'); 
+
+
+#dvLoading	{
+	background: url(ajax-loader.gif) no-repeat center center;
+    height: 100px;
+	width: 100px;
+  	position: fixed;
+	z-index: 1000;
+	left: 50%;
+	top: 50%;
+	margin: -25px 0 0 -25px;
+}
+
+#logoutMessage {
+	width: 65%;
+	text-align:center;
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 1.5em;
+	background-color: #5BB75B;
+	color:#F6E7D2;
 }
 
 #myName {
@@ -22,10 +44,18 @@
 #submit {
 	background-color: #0A4958;
 	color: #F6E7D2;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#submit:hover {
+	background-color: #F6E7D2;
+	color: #0A4958;
 }
 
 h1 {
-	font-family: Prociono;
 	color: #F6E7D2;
 }
 
@@ -41,7 +71,6 @@ li {
 	background-color: #0A4958;
 	color:#F6E7D2;
 	display:table-cell;
-	font-family: Prociono;
 	padding: 0px;
 	width: 50%;
 	-webkit-border-radius: 10px;
@@ -69,7 +98,7 @@ li {
 html, body {
 	height: 100%;
 	background-color: #F6E7D2;
-	font-family: Prociono;
+	font-family: 'Open Sans', sans-serif;
 }
 .wrapper {
 	min-height: 100%;
@@ -112,6 +141,6 @@ html, body {
 #Cdt {
 	text-align:center;
 	padding:4px;
-	font-family: Prociono;
+	font-family: 'Open Sans', sans-serif;
 }
 

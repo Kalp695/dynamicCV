@@ -13,11 +13,16 @@
 
 <link rel="stylesheet" type="text/css" href="resources/styles/common.css">
 <link rel="stylesheet" type="text/css" href="resources/styles/contactInfo.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
+$(window).load(function(){
+	$('#dvLoading').fadeOut(2000);	
+});
+
 	$(document).ready(function($) {
 		
 		    $.fn.extend( {
@@ -53,9 +58,9 @@
 <div class="wrapper">
 	<div id="header">
 	<div id="login">
-		<form>
-			<input type="text" name="username" placeholder="Username"/>
-			<input type="text" name="password" placeholder="Password"/>
+		<form action="j_spring_security_check" method="post">
+			<input type="text" name="j_username" placeholder="Username"/>
+			<input type="password" name="j_password" placeholder="Password"/>
 			<input id="submit" type="submit" value="Login"/>
 		</form>
 	</div>
@@ -74,6 +79,8 @@
 	</c:if>
 
 	<div id="content">
+	
+	<div id="dvLoading"></div>
 	
 	<table>
 	
@@ -114,6 +121,11 @@
 	<div id="profile" onclick="window.open('https://fi-fi.facebook.com/aleksi.monaco', 'mywindow');" style="cursor: pointer;">
 		Facebook Profile
 		<img id ="profileImg" src="resources/images/facebook.png" />
+	</div>
+	
+	<div id="profile" onclick="window.open('https://github.com/aleksimonaco/', 'mywindow');" style="cursor: pointer;">
+		GitHub Profile
+		<img id ="profileImg" src="resources/images/GitHub-Mark-32px.png" />
 	</div>
 	
 	<div class="border"></div>

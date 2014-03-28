@@ -12,3 +12,7 @@ VALUES ("Upper secondary school matriculation exam ", "2011", "Alppila High Scho
 		
 INSERT INTO workExperience (employer, title, taskDescription, startDate, person_id)
 VALUES ("Siwa Mechelininkatu", "Salesperson", "Running the store, working at the cash register and customer service.", "2012/02/22", 1);
+
+INSERT INTO workExperience (employer, title, taskDescription, startDate, endDate, person_id)
+VALUES ("Makuuni Fredrikinkatu", "Intern", "Returning rented movies, customer service and generally keeping the store clean and attractive. ", 
+		"2011/08/24", "2011/11/23", 1);

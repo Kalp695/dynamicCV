@@ -25,8 +25,8 @@ public class WorkExperienceRowMapper implements RowMapper<WorkExperience>{
 		
 		String endDate = rs.getString("endDate");
 		if(endDate != null){
-			String[] formatEndDate = endDate.split("/");
-			endDate = formatEndDate[2] + "." + formatEndDate[1] + formatEndDate[0];
+			String[] formatEndDate = endDate.split("-");
+			endDate = formatEndDate[2] + "." + formatEndDate[1] + "." + formatEndDate[0];
 		}
 		we.setEndDate(endDate);
 		

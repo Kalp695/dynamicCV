@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,17 +9,23 @@
 <link rel="stylesheet" type="text/css" href="resources/styles/common.css">
 <link rel="stylesheet" type="text/css" href="resources/styles/curriculum.css">
 <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(window).load(function(){
+	$('#dvLoading').fadeOut(2000);	
+});
+</script>
 <title>Curriculum Vitae</title>
 </head>
 <body>
 <div class="wrapper">
 	<div id="header">
 	<div id="login">
-		<form>
-			<input type="text" name="username" placeholder="Username"/>
-			<input type="text" name="password" placeholder="Password"/>
+		<form action="j_spring_security_check" method="post">
+			<input type="text" name="j_username" placeholder="Username"/>
+			<input type="password" name="j_password" placeholder="Password"/>
 			<input id="submit" type="submit" value="Login"/>
 		</form>
 	</div>
@@ -32,6 +38,8 @@
 	</div>
 	
 	<div id="content">
+	
+	<div id="dvLoading"></div>
 	
 	<table>
 	
@@ -135,7 +143,31 @@
 	</tbody>
 	
 	</table>
+	
+	<div class="border"></div>
 
+	<table class="CVTable">
+	
+	<thead class="CVTableHead">
+		<tr>
+			<td class="CVTableHeadTd">Skills</td>
+		</tr>
+	</thead>
+	
+	<tbody id="CVTableBody">
+		<tr>
+			<td class="CVTdHead">Name</td>
+			<td class="CVTdHead">Level</td>
+		</tr>
+	<c:forEach items="${skills}" var="s">
+		<tr>
+			<td class="CVTd"><c:out value="${s.name }" /></td>
+			<td class="CVTd"><c:out value="${s.level }" /></td>
+		</tr>
+	</c:forEach>
+	</tbody>
+	
+	</table>
 	
 	</div>
 
