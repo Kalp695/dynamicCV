@@ -48,6 +48,7 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	padding: 5px;s
 }
 
 #submit:hover {
@@ -142,5 +143,10 @@ html, body {
 	text-align:center;
 	padding:4px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.inputField {
+	padding: 5px;
+	border: 1px solid black;
 }
 

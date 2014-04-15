@@ -24,8 +24,8 @@ $(window).load(function(){
 	<div id="header">
 	<div id="login">
 		<form action="j_spring_security_check" method="post">
-			<input type="text" name="j_username" placeholder="Username"/>
-			<input type="password" name="j_password" placeholder="Password"/>
+			<input class="inputField" type="text" name="j_username" placeholder="Username"/>
+			<input class="inputField" type="password" name="j_password" placeholder="Password"/>
 			<input id="submit" type="submit" value="Login"/>
 		</form>
 	</div>

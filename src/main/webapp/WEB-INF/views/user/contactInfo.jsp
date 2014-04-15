@@ -59,8 +59,8 @@ $(window).load(function(){
 	<div id="header">
 	<div id="login">
 		<form action="j_spring_security_check" method="post">
-			<input type="text" name="j_username" placeholder="Username"/>
-			<input type="password" name="j_password" placeholder="Password"/>
+			<input class="inputField" type="text" name="j_username" placeholder="Username"/>
+			<input class="inputField" type="password" name="j_password" placeholder="Password"/>
 			<input id="submit" type="submit" value="Login"/>
 		</form>
 	</div>
@@ -112,18 +112,18 @@ $(window).load(function(){
 	
 	<div class="border"></div>
 	
-	<div id="profile" onclick="window.open('http://fi.linkedin.com/in/aleksimonaco', 'mywindow');" style="cursor: pointer;">
+	<div title="LinkedIn Profile" id="profile" onclick="window.open('http://fi.linkedin.com/in/aleksimonaco', 'mywindow');" style="cursor: pointer;">
 		LinkedIn Profile
 		<img id ="profileImg" src="resources/images/linkedin.png" />
 	</div>
 	
-
-	<div id="profile" onclick="window.open('https://fi-fi.facebook.com/aleksi.monaco', 'mywindow');" style="cursor: pointer;">
+	
+	<div title="Facebook Profile" id="profile" onclick="window.open('https://fi-fi.facebook.com/aleksi.monaco', 'mywindow');" style="cursor: pointer;">
 		Facebook Profile
 		<img id ="profileImg" src="resources/images/facebook.png" />
 	</div>
 	
-	<div id="profile" onclick="window.open('https://github.com/aleksimonaco/', 'mywindow');" style="cursor: pointer;">
+	<div title="GitHub Profile" id="profile" onclick="window.open('https://github.com/aleksimonaco/', 'mywindow');" style="cursor: pointer;">
 		GitHub Profile
 		<img id ="profileImg" src="resources/images/GitHub-Mark-32px.png" />
 	</div>
