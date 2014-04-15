@@ -49,3 +49,7 @@ h2 {
 	width: 100%;
 	margin-top: 30px;
 }
+
+#LoginSubmit:hover {
+	background-color: #01B6AD;
+}

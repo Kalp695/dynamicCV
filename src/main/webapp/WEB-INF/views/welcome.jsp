@@ -12,6 +12,7 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 <script>
 $(window).load(function(){
 	$('#dvLoading').fadeOut(2000);	
@@ -51,12 +52,8 @@ $(document).ready(function($) {
 	
 	<div id="content">
 	
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at nisl tincidunt, euismod urna rhoncus, cursus justo. Suspendisse luctus vestibulum metus, ut egestas magna auctor non. 
-		Mauris eu tempus erat. Praesent vel justo ligula. Nam venenatis quam interdum vestibulum euismod. Proin ut adipiscing massa. Phasellus blandit tincidunt molestie. Fusce id ligula vitae lorem facilisis eleifend sed et purus. Vivamus nec feugiat felis. Donec cursus nisi neque, ac facilisis odio commodo et. Vestibulum urna nisi, blandit eu arcu non, feugiat consectetur ipsum. Pellentesque accumsan sapien tortor, eget eleifend sapien porta a.
-		 Proin id libero sed lacus varius feugiat ac sit amet dui. 
-		Proin ut ipsum ligula. Nullam vitae elit ac tortor imperdiet varius luctus id neque. Vestibulum dignissim quis lacus nec dapibus
-	</p>
+		
+		
 	</div>
 
 	<div class="push"></div>

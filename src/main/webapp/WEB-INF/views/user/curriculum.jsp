@@ -12,10 +12,9 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-$(window).load(function(){
-	$('#dvLoading').fadeOut(2000);	
-});
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="resources/scripts/curriculum.js">
+
 </script>
 <title>Curriculum Vitae</title>
 </head>
@@ -41,6 +40,73 @@ $(window).load(function(){
 	
 	<div id="dvLoading"></div>
 	
+	<div id="accordion" class="ui-accordion ui-widget ui-helper-reset">
+		    <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
+		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+		        Personal Information
+		    </h3>
+		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom curriculum-accordion-content">
+		    <table>
+				<tr>
+					<td><c:out value="${person.FName}" /> <c:out value="${person.LName}" /></td>
+				</tr>
+				<tr>
+					<td><c:out value="${person.address }" /></td>
+				</tr>
+				<tr>
+					<td> <c:out value="${person.postNumber}" /> <c:out value="${person.city}" /></td>
+				</tr>
+				<tr>
+					<td> <c:out value="${person.phone}" /></td>
+				</tr>
+				<tr>
+					<td><c:out value="${person.email}" /></td>
+				</tr>
+			</table>
+  	 		 </div>
+  	 		 <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
+		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+		        Education
+		    </h3>
+		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom  curriculum-accordion-content">
+		    	<table>
+						<tr>
+							<td class="CVTdHead">Degree Name</td>
+							<td class="CVTdHead">Completion Year</td>
+							<td class="CVTdHead">School</td>
+						</tr>
+					<c:forEach items="${degrees}" var="d">
+						<tr>
+							<td class="CVTd"><c:out value="${d.name }" /></td>
+							<td class="CVTd"><c:out value="${d.compYear }" /></td>
+							<td class="CVTd"><c:out value="${d.school }" /></td>
+						</tr>
+						<tr>
+							<td></td><td>Description</td>
+						</tr>
+						<tr>
+							<td></td><td id="DegreeDesc"><c:out value="${d.description }" /></td>
+						</tr>
+					</c:forEach>
+				</table>
+		    </div>
+		    <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
+		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+		        Work Experience
+		    </h3>
+		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom curriculum-accordion-content">
+		    	lol
+		    </div>
+		    <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
+		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+		        Skills
+		    </h3>
+		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom  curriculum-accordion-content">
+		    	lol
+		    </div>
+		</div>
+	
+	<!-- Old version of CV table
 	<table>
 	
 	<thead class="CVTableHead">
@@ -167,7 +233,7 @@ $(window).load(function(){
 	</c:forEach>
 	</tbody>
 	
-	</table>
+	</table> -->
 	
 	</div>
 

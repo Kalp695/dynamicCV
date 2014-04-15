@@ -1,3 +1,24 @@
+
+.curriculum-accordion {
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #0A4958;
+	color: white;
+	text-align: center;
+}
+
+.curriculum-accordion-content {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: -21px;
+	padding: 10px;
+	border: 2px solid #0A4958;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
 .CVTable {
 	width: 100%;
 }
