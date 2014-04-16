@@ -9,14 +9,22 @@
 	text-align: center;
 }
 
+.plusSymbol {
+	float:right;
+	line-height: 1.5;
+}
+
 .curriculum-accordion-content {
 	width: 95%;
 	margin: 0 auto;
-	margin-top: -21px;
+	margin-top: -19px;
 	padding: 10px;
-	border: 2px solid #0A4958;
+	border-left: 2px solid #0A4958;
+	border-right: 2px solid #0A4958;
+	border-bottom: 2px solid #0A4958;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+	background-color:white;
 }
 
 .CVTable {

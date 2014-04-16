@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="resources/styles/curriculum.css">
 <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
@@ -44,6 +45,7 @@
 		    <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
 		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
 		        Personal Information
+		        <i class="plusSymbol fa fa-plus-circle"></i>
 		    </h3>
 		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom curriculum-accordion-content">
 		    <table>
@@ -67,6 +69,7 @@
   	 		 <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
 		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
 		        Education
+		         <i class="plusSymbol fa fa-plus-circle"></i>
 		    </h3>
 		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom  curriculum-accordion-content">
 		    	<table>
@@ -93,6 +96,7 @@
 		    <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
 		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
 		        Work Experience
+		        <i class="plusSymbol fa fa-plus-circle"></i>
 		    </h3>
 		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom curriculum-accordion-content">
 		    	lol
@@ -100,6 +104,7 @@
 		    <h3 class="accordion-header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all curriculum-accordion">
 		        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
 		        Skills
+		        <i class="plusSymbol fa fa-plus-circle"></i>
 		    </h3>
 		    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom  curriculum-accordion-content">
 		    	lol
