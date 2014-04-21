@@ -2,6 +2,7 @@
 
 #dvLoading	{
 	background: url(ajax-loader.gif) no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.7);
     height: 100px;
 	width: 100px;
   	position: fixed;
@@ -9,6 +10,9 @@
 	left: 50%;
 	top: 50%;
 	margin: -25px 0 0 -25px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 #logoutMessage {

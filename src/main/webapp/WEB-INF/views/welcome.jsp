@@ -46,7 +46,7 @@ $(document).ready(function($) {
 	
 	<c:if test="${loggedout == true }">
 		<p id="logoutMessage">
-			<i class="fa fa-check-circle-o"></i>Logout succesful!
+			<i class="fa fa-check-circle-o"></i>Logout succesfull!
 		</p>
 	</c:if>
 	
